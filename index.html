@@ -20,12 +20,11 @@
     />
     <script
       type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"
     ></script>
-
-    <!-- copied from bottom line, pasted here, why does this work now? defer breaks it -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
+    <script 
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+    ></script>
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Work Day Scheduler</title>
   </head>
@@ -35,40 +34,67 @@
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
+      <p id="currentTime" class="lead"></p>
     </header>
     <div class="container">
       <!-- Timeblocks go here -->
-      <div id="hour9">
-        9AM
+
+      <div class="row py-1" id="hour09">
+        <div class="col-lg-2 col-sm-1 rounded-left hour">9:00 AM</div>
+        <textarea class="col-lg-8 col-sm-6 time-block" id="hourBlock9" placeholder="Type here"></textarea>
+        <div class="col-lg-2 col-sm-1 rounded-right saveBtn" id="saveBtn9">Click to save</div>
       </div>
-      <div id="hour10">
-        10AM
+
+      <div class="row py-1" id="hour10">
+        <div class="col-lg-2 col-sm-1 rounded-left hour">10:00 AM</div>
+        <textarea class="col-lg-8 col-sm-6 time-block" id="hourBlock10" placeholder="Type here"></textarea>
+        <div class="col-lg-2 col-sm-1 rounded-right saveBtn" id="saveBtn10">Click to save</div>
       </div>
-      <div id="hour11">
-        11AM
+
+      <div class="row py-1" id="hour11">
+        <div class="col-lg-2 col-sm-1 rounded-left hour">11:00 AM</div>
+        <textarea class="col-lg-8 col-sm-6 time-block" id="hourBlock11" placeholder="Type here"></textarea>
+        <div class="col-lg-2 col-sm-1 rounded-right saveBtn" id="saveBtn11">Click to save</div>
       </div>
-      <div id="hour12">
-        12PM
+
+      <div class="row py-1" id="hour12">
+        <div class="col-lg-2 col-sm-1 rounded-left hour">12:00 PM</div>
+        <textarea class="col-lg-8 col-sm-6 time-block" id="hourBlock12" placeholder="Type here"></textarea>
+        <div class="col-lg-2 col-sm-1 rounded-right saveBtn" id="saveBtn12">Click to save</div>
       </div>
-      <div id="hour1">
-        1PM
+
+      <div class="row py-1" id="hour13">
+        <div class="col-lg-2 col-sm-1 rounded-left hour">1:00 PM</div>
+        <textarea class="col-lg-8 col-sm-6 time-block" id="hourBlock13" placeholder="Type here"></textarea>
+        <div class="col-lg-2 col-sm-1 rounded-right saveBtn" id="saveBtn13">Click to save</div>
       </div>
-      <div id="hour2">
-        2PM
+
+      <div class="row py-1" id="hour14">
+        <div class="col-lg-2 col-sm-1 rounded-left hour">2:00 PM</div>
+        <textarea class="col-lg-8 col-sm-6 time-block" id="hourBlock14" placeholder="Type here"></textarea>
+        <div class="col-lg-2 col-sm-1 rounded-right saveBtn" id="saveBtn14">Click to save</div>
       </div>
-      <div id="hour3">
-        3PM
+
+      <div class="row py-1" id="hour15">
+        <div class="col-lg-2 col-sm-1 rounded-left hour">3:00 PM</div>
+        <textarea class="col-lg-8 col-sm-6 time-block" id="hourBlock15" placeholder="Type here"></textarea>
+        <div class="col-lg-2 col-sm-1 rounded-right saveBtn" id="saveBtn15">Click to save</div>
       </div>
-      <div id="hour4">
-        4PM
+
+      <div class="row py-1" id="hour16">
+        <div class="col-lg-2 col-sm-1 rounded-left hour">4:00 PM</div>
+        <textarea class="col-lg-8 col-sm-6 time-block" id="hourBlock16" placeholder="Type here"></textarea>
+        <div class="col-lg-2 col-sm-1 rounded-right saveBtn" id="saveBtn16">Click to save</div>
       </div>
-      <div id="hour5">
-        5PM
+
+      <div class="row py-1" id="hour17">
+        <div class="col-lg-2 col-sm-1 rounded-left hour">5:00 PM</div>
+        <textarea class="col-lg-8 col-sm-6 time-block" id="hourBlock17" placeholder="Type here"></textarea>
+        <div class="col-lg-2 col-sm-1 rounded-right saveBtn" id="saveBtn17">Click to save</div>
       </div>
+
     </div>
 
     <script src="assets/js/script.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script> -->
   </body>
 </html>
